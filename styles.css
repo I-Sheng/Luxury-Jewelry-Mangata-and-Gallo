@@ -27,7 +27,10 @@ h1 {
 h2 {
   margin: 1rem auto 0 auto;
   font-size: 3rem;
-  height: 7rem;
+}
+
+h3 {
+  font-size: 3.5rem;
 }
 
 header > img {
@@ -42,15 +45,17 @@ header img {
 }
 
 nav {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5vh;
+  width: 100%;
 }
 nav ul {
   list-style: none;
-  margin-top: 1.5rem;
+  margin-top: 1.5vh;
 }
 a {
   font-weight: bold;
   text-decoration: none; /* Remove underline */
+  font-size: 2rem;
 }
 ul > li {
   display: inline-block;
@@ -100,7 +105,10 @@ article img {
   width: 100vw;
   display: flex;
   margin-top: 3rem;
-  align-items: stretch;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "p1 p2 p3";
 }
 #products > article {
   margin: 0 3vw 0 3vw;
@@ -118,9 +126,8 @@ article img {
 }
 
 .overlay {
-  top: 17.5vh;
+  top: 23vh;
   left: auto;
-  height: 30rem;
   width: 100vw;
   position: absolute;
   display: flex;
@@ -134,4 +141,55 @@ article img {
 #logo2 {
   height: 4rem;
   width: auto;
+}
+
+@media screen and (max-width: 680px) {
+  main section:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .overlay {
+    font-size: 3rem;
+  }
+  .overlay p:nth-child(2) {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+  #products {
+    grid-template-areas: "p1" "p2" "p2";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 80vw;
+    justify-content: center; /* Center items horizontally */
+  }
+
+  #products > article {
+    margin-top: 2rem;
+  }
+
+  article img {
+    width: 50vw;
+    height: 43.75vw;
+  }
+  #products p {
+    width: 50vw;
+  }
+  a {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 10px;
+  }
+  ul > li {
+    margin: 1vh auto 1.5vh auto;
+  }
 }
