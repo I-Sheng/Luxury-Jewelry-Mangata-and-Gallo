@@ -2,8 +2,7 @@
 This is the project for Coursera's course "HTML and CSS in depth's".
 
 # Live Site
-https://i-sheng.github.io/A-web-page-for-jewelrys-store/
-
+[Home page](https://i-sheng.github.io/Luxury-Jewelry-Mangata-and-Gallo/)
 ### Certificate
 
 [Coursera Meta's Certificate](https://www.coursera.org/account/accomplishments/certificate/6BDDUYUVSDXJ)
