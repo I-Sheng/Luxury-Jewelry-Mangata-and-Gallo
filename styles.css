@@ -62,6 +62,7 @@ a {
 a:hover {
   background-color: rgba(243, 100, 124, 0.39);
   border-radius: 1.5rem;
+  border: 0.5rem solid rgba(243, 100, 124, 0.39);
 }
 
 a:active {
