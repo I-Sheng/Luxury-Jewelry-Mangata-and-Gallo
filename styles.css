@@ -57,6 +57,10 @@ a {
   text-decoration: none; /* Remove underline */
   font-size: 2rem;
   color: rgba(128, 0, 128, 0.829);
+
+  display: inline-block; /* Ensures the element respects width and height */
+  border: 0.5rem solid transparent; /* Set a transparent border by default */
+  transition: border-color 0.3s; /* Add a smooth transition for the border color */
 }
 
 a:hover {
